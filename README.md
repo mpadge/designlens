@@ -1,6 +1,6 @@
 # designlens
 
-[![Tests](https://github.com/ropensci-review-tools/designlens/actions/workflows/tests.yml/badge.svg)](https://github.com/ropensci-review-tools/designlens/actions/workflows/tests.yml)
+[![Tests](https://github.com/mpadge/designlens/actions/workflows/tests.yml/badge.svg)](https://github.com/mpadge/designlens/actions/workflows/tests.yml)
 
 A planning tool with a long memory for AI-assisted projects. {designlens}
 works in two directions: **forward**, to guide what you're building next, and
@@ -39,9 +39,9 @@ built, but *why* it is the way it is.
 Each feature or change is developed as a numbered *stage*. A stage produces four
 artifacts, committed to your repo under `specs/`:
 
-- [**plan.md**](https://github.com/ropensci-review-tools/designlens/blob/main/docs/workflow.md#phase-2-plan-the-stage) — the design vision: what you're building and why
-- [**tasks.md**](https://github.com/ropensci-review-tools/designlens/blob/main/docs/workflow.md#phase-3-convert-plan-into-tasks) — the execution breakdown: concrete, checkboxed steps
-- [**design-decisions.md**](https://github.com/ropensci-review-tools/designlens/blob/main/docs/workflow.md#phase-5-create-retrospective) — the reasoning record: what was decided, what was traded off, how it connects to prior stages
+- [**plan.md**](https://github.com/mpadge/designlens/blob/main/docs/workflow.md#phase-2-plan-the-stage) — the design vision: what you're building and why
+- [**tasks.md**](https://github.com/mpadge/designlens/blob/main/docs/workflow.md#phase-3-convert-plan-into-tasks) — the execution breakdown: concrete, checkboxed steps
+- [**design-decisions.md**](https://github.com/mpadge/designlens/blob/main/docs/workflow.md#phase-5-create-retrospective) — the reasoning record: what was decided, what was traded off, how it connects to prior stages
 - **.metadata.json** — session stats accumulated across every session that touched the stage: token usage, lines written, files changed, and which agent(s) did the work
 
 Over time, `specs/` becomes a navigable record of your project's decisions,
@@ -57,13 +57,13 @@ remove them.
 ### Linux / macOS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/designlens/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mpadge/designlens/main/install.sh | bash
 ```
 
 ### Windows
 
 ```powershell
-irm https://raw.githubusercontent.com/ropensci-review-tools/designlens/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/mpadge/designlens/main/install.ps1 | iex
 ```
 
 ## How to use designlens
@@ -95,7 +95,7 @@ create proforma command files in `.opencode/command/`. Copy these to your
 agent's commands directory (e.g. `.github/agents/`, `.cursor/rules/`) and
 modify them to match your agent's format if needed. To request native support
 for additional agents, please [open an
-issue](https://github.com/ropensci-review-tools/designlens/issues). Note that
+issue](https://github.com/mpadge/designlens/issues). Note that
 metadata aggregation is currently only possible for opencode and Claude Code.
 
 For established projects, `init` will also generate a `000-design-history` stub
@@ -165,7 +165,7 @@ designlens uninstall  # remove the tool (your specs/ folders are untouched)
 ## Documentation
 
 See
-[`docs/conventions.md`](https://github.com/ropensci-review-tools/designlens/blob/main/docs/conventions.md)
+[`docs/conventions.md`](https://github.com/mpadge/designlens/blob/main/docs/conventions.md)
 for the full workflow specification, file format templates, and agent
 instructions.
 

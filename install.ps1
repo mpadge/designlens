@@ -4,7 +4,7 @@ param(
     [string]$InstallDir = "$env:LOCALAPPDATA\designlens"
 )
 
-$Repo   = "ropensci-review-tools/designlens"
+$Repo   = "mpadge/designlens"
 $Branch = "main"
 $ArchiveUrl = "https://github.com/$Repo/archive/refs/heads/$Branch.zip"
 

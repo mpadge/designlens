@@ -6,7 +6,7 @@ lib_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$lib_dir/colors.sh"
 source "$lib_dir/logo.sh"
 
-REPO="ropensci-review-tools/designlens"
+REPO="mpadge/designlens"
 INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/$REPO/main/install.sh"
 METADATA_URL="https://raw.githubusercontent.com/$REPO/main/designlens.json"
 

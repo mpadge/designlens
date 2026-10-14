@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-REPO="ropensci-review-tools/designlens"
+REPO="mpadge/designlens"
 BRANCH="main"
 ARCHIVE_URL="https://github.com/$REPO/archive/refs/heads/$BRANCH.tar.gz"
 
@@ -63,7 +63,7 @@ case "$OS" in
   MINGW*|MSYS*|CYGWIN*)
     echo "Detected Windows environment with Git Bash/WSL..."
     echo "Please run install.ps1 in PowerShell instead:"
-    echo "  irm https://raw.githubusercontent.com/ropensci-review-tools/designlens/main/install.ps1 | iex"
+    echo "  irm https://raw.githubusercontent.com/mpadge/designlens/main/install.ps1 | iex"
     exit 1
     ;;
 
